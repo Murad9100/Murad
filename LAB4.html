@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Murad Səfərov - CV</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+    body {
+      margin: 0;
+      display: flex;
+      background-color: #f9f9f9;
+    }
+    .left-panel {
+      width: 35%;
+      background-color: #2ecc71; /* Yaşıl fon */
+      padding: 20px;
+      color: #333;
+      min-height: 100vh;
+    }
+    .right-panel {
+      width: 65%;
+      background-color: #fff;
+      padding: 30px;
+    }
+    .profile-img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 3px solid #27ae60;
+    }
+    h1 {
+      font-size: 24px;
+      margin: 10px 0;
+      color: #27ae60;
+    }
+    .section {
+      margin-bottom: 30px;
+    }
+    .section h3 {
+      margin-bottom: 10px;
+      color: #27ae60;
+      border-bottom: 2px solid #27ae60;
+      padding-bottom: 4px;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+    ul li {
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+    }
+    ul li i {
+      margin-right: 10px;
+      color: #27ae60;
+    }
+    p {
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="left-panel">
+    <img src="http://post-images.org/photo-page.php?photo=7nbLqr4Q" alt="Profil şəkli" class="profile-img" />
+    <h1>Murad Səfərov</h1>
+    <p>18 yaş | Bakı, Yeni Yasamal</p>
+
+    <div class="section">
+      <h3><i class="fa-solid fa-at"></i> Əlaqə</h3>
+      <ul>
+        <li><i class="fa-solid fa-phone"></i> 050 611 51 32</li>
+        <li><i class="fa-solid fa-envelope"></i> muradseferov7962@gmail.com</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3><i class="fa-solid fa-graduation-cap"></i> Təhsil</h3>
+      <p>Azərbaycan Texniki Universitetində İnformasiya Texnologiyaları üzrə 1-ci kurs tələbəsiyəm.</p>
+    </div>
+
+    <div class="section">
+      <h3><i class="fa-solid fa-language"></i> Danışdığım Dillər</h3>
+      <ul>
+        <li><i class="fa-solid fa-globe"></i> Azərbaycan dili (ana dili)</li>
+        <li><i class="fa-solid fa-globe"></i> Rus dili</li>
+        <li><i class="fa-solid fa-globe"></i> İngilis dili</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="right-panel">
+    <div class="section">
+      <h3><i class="fa-solid fa-user"></i> Haqqımda</h3>
+      <p>Mən informasiya təhlükəsizliyi üzrə 1-ci kurs tələbəsiyəm. Texnologiyalara olan marağım məni davamlı öyrənməyə və bacarıqlarımı inkişaf etdirməyə təşviq edir. Proqramlaşdırma, veb inkişaf və yeni texnologiyalarla işləmək sahəsində ilkin biliklərə malikəm və bu istiqamətdə təcrübə qazanmağa çalışıram. Komanda ilə işləməyi, yeni biliklər öyrənməyi və real layihələrdə iştirak etməyi sevirəm. Məqsədim peşəkar olmaq və innovativ layihələrdə yer almaqdır.</p>
+    </div>
+
+    <div class="section">
+      <h3><i class="fa-solid fa-star"></i> Bacarıqlar</h3>
+      <ul>
+        <li><i class="fa-solid fa-check"></i> Liderlik</li>
+        <li><i class="fa-solid fa-check"></i> Komanda işi</li>
+        <li><i class="fa-solid fa-check"></i> Yaradıcılıq</li>
+        <li><i class="fa-solid fa-check"></i> HTML və CSS bilikləri</li>
+        <li><i class="fa-solid fa-check"></i> İnformasiya təhlükəsizliyi üzrə ilkin təcrübə</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h3><i class="fa-solid fa-briefcase"></i> İş Təcrübəsi</h3>
+      <p>Cyber Pulse Moderator</p>
+    </div>
+  </div>
+<form id="cvForm" novalidate>
+  <div class="section">
+    <h3>Əlaqə Məlumatları</h3>
+    <label for="name">Ad *</label><br/>
+    <input type="text" id="name" name="name" required minlength="3" /><br/>
+    <span class="error" id="nameError"></span>
+
+    <label for="email">E-poçt *</label><br/>
+    <input type="email" id="email" name="email" required /><br/>
+    <span class="error" id="emailError"></span>
+
+    <label for="date">Tarix *</label><br/>
+    <input type="date" id="date" name="date" required /><br/>
+    <span class="error" id="dateError"></span>
+
+    <label for="description">Təsvir *</label><br/>
+    <textarea id="description" name="description" required minlength="10"></textarea><br/>
+    <span class="error" id="descriptionError"></span>
+  </div>
+
+  <button type="submit">Yadda Saxla</button>
+</form>
+
+</body>
+</html>
